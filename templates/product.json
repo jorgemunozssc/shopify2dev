@@ -6,57 +6,144 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text_style": "uppercase",
-            "text": "{{ product.vendor }}"
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "title": {
-          "type": "title"
-        },
-        "caption": {
-          "type": "text",
+          "type": "title",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
-          "type": "variant_picker"
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
-          "type": "buy_buttons"
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "share": {
-          "type": "share"
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "3035d62f-3121-416e-aa2d-28eafef8872c": {
+          "type": "shopify:\/\/apps\/cross-sell\/blocks\/app-general\/d57b28bc-34f0-4ebc-b397-9eb9c6ea4220",
+          "settings": {
+            "titleproductpage": "You may also like...",
+            "titleproductpagedefault": "Our Bestsellers...",
+            "titlecheckoutpage": "Before you checkout, have you considered..."
+          }
+        },
+        "e873c867-1a8b-4a82-8d36-e15ec4187f81": {
+          "type": "shopify:\/\/apps\/cross-sell\/blocks\/app-original\/d57b28bc-34f0-4ebc-b397-9eb9c6ea4220",
+          "settings": {
+          }
+        },
+        "e12bbc3e-9fde-42fb-9a53-e077e279aa59": {
+          "type": "shopify:\/\/apps\/cross-sell\/blocks\/app-theme\/d57b28bc-34f0-4ebc-b397-9eb9c6ea4220",
+          "settings": {
+            "use_recommendations": false,
+            "xsrandomize": false,
+            "xsdisplayvendor": true,
+            "xsdisplaysalebadge": true,
+            "xsdisplaycompareatprice": true,
+            "xsmustbeavailable": false,
+            "xshideifincart": false,
+            "xsdisplaypricevarieslabel": true,
+            "from_label": "From",
+            "hide_prices": false,
+            "carousel_enabled": false,
+            "carousel_auto_play": false,
+            "carousel_page_dots": false,
+            "image_width": "",
+            "image_height": "",
+            "font_family": "helvetica_n4",
+            "font_size": "",
+            "font_color": ""
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "subtitle",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
-      ]
+        "share",
+        "3035d62f-3121-416e-aa2d-28eafef8872c",
+        "e873c867-1a8b-4a82-8d36-e15ec4187f81",
+        "e12bbc3e-9fde-42fb-9a53-e077e279aa59"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "product-recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1643155714ba03f3dc": {
+      "type": "apps",
+      "blocks": {
+        "72456046-0301-4ca9-936d-9575bb94f411": {
+          "type": "shopify:\/\/apps\/cross-sell\/blocks\/app-general\/d57b28bc-34f0-4ebc-b397-9eb9c6ea4220",
+          "settings": {
+            "titleproductpage": "You may also like...",
+            "titleproductpagedefault": "Our Bestsellers...",
+            "titlecheckoutpage": "Before you checkout, have you considered..."
+          }
+        }
+      },
+      "block_order": [
+        "72456046-0301-4ca9-936d-9575bb94f411"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1643155714ba03f3dc"
   ]
 }
